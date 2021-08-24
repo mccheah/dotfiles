@@ -1,0 +1,11 @@
+nnoremap : ;
+nnoremap ; :
+imap jj <ESC>
+set cindent
+set autoindent
+set smartindent
+set shiftwidth=4
+set softtabstop=4
+set diffopt=vertical
+set diffopt+=iwhite
+set nowrap
