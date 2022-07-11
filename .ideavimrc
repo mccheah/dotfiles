@@ -1,6 +1,16 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Bundle 'derekwyatt/vim-scala'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
 nnoremap : ;
 nnoremap ; :
 imap jj <ESC>
@@ -14,6 +24,5 @@ set tabstop=4
 set diffopt=vertical
 set diffopt+=iwhite
 " set nowrap
-au FileType gitcommit setlocal tw=72
 
 syntax on
